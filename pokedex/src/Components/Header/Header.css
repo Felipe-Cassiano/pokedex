@@ -1,0 +1,9 @@
+.Header-img {
+    width: 200px;
+}
+
+.Header-header {
+    background-color: hsl(0, 100%, 44%);
+    display: flex;
+    justify-content: center;
+}
