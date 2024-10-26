@@ -1,0 +1,87 @@
+.PokeInfo-container {
+    display: grid;
+    margin-left: 250px;
+    margin-right: 250px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas: 
+    '       info    info    name    name     name   '
+    '       info    info    stats    stats   stats   '
+    '       info    info    stats    stats   stats  '
+    '       info    info    stats    stats   stats  '
+    '       info    info    stats    stats   stats  '
+    ;
+    background-size: cover;
+    border-radius: 20px;
+    color: black;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.PokeInfo-container-info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.PokeInfo-container-info-info1{
+    display: flex;
+    flex-direction: column;
+}
+
+.PokeInfo-container-info-info1-types {
+    position: absolute;
+    padding: 7px 0 7px 0;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    fill: ;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    top: 82%;
+    left: 5%;
+
+    
+}
+
+.PokeInfo-container-info-info1-type {
+    max-width: 40px;
+}
+
+.PokeInfo-container-info-info1-pkmn {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    filter: blur(90px);
+    border: 1px solid white;
+}
+
+.PokeInfo-container-info-info2 {
+    position: absolute;
+    padding-left: 10px;
+}
+
+.PokeInfo-container-name {
+    grid-area: name;
+}
+
+.PokeInfo-container-stats {
+    grid-area: stats;
+}
+.PokeInfo-container-gradient {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(48, 186, 48);
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+
+}
