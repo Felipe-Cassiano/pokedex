@@ -246,7 +246,7 @@ function Body() {
             </div>
 
             <div className="Copyright">
-                Made By Felipe Cassiano <br />
+                Made By - Felipe Cassiano <br />
                 <a href="https://github.com/Felipe-Cassiano">https://github.com/Felipe-Cassiano</a>
             </div>
         </section>
