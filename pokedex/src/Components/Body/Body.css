@@ -1,0 +1,30 @@
+.Body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+    background-image: url('/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.Copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 37%;
+    text-align: center;
+    width: 300px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(9px);
+    border: 1px solid white;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 500px) {
+    .Copyright {
+        left: 25px;
+    }
+}

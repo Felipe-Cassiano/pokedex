@@ -1,0 +1,34 @@
+.SearchBar-container {
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.SearchBar-input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-right: 1px solid white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.SearchBar-input:focus{
+    outline: none;
+}
+
+.SearchBar-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 50px;
+}
+
+@media (max-width:500px) {
+    .SearchBar-container{
+        width: 89%;
+    }
+}
