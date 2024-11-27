@@ -33,15 +33,15 @@ function Body() {
             setPkmnInfo({
                 img: dataPkmn.sprites.front_default,
                 imgShiny: dataPkmn.sprites.front_shiny,
-                bgImg: `/assets/bgImgs/${dataPkmn.types[0].type.name}.gif`,
+                bgImg: `/pokedex/assets/bgImgs/${dataPkmn.types[0].type.name}.gif`,
 
                 name: dataPkmn.species.name,
 
                 height: (dataPkmn.height) / 10,
                 weight: (dataPkmn.weight) / 10,
 
-                type0: `/assets/types/${dataPkmn.types[0].type.name}.png`,
-                type1: dataPkmn.types[1] ? `/assets/types/${dataPkmn.types[1].type.name}.png` : '',
+                type0: `/pokedex/assets/types/${dataPkmn.types[0].type.name}.png`,
+                type1: dataPkmn.types[1] ? `/pokedex/assets/types/${dataPkmn.types[1].type.name}.png` : '',
 
 
                 hp: dataPkmn.stats[0].base_stat,
@@ -240,7 +240,7 @@ function Body() {
                 </div>
 
                 <div className="PokeInfo-container-empty">
-                    <img src="../assets/pokemonLogo.png" alt="" />
+                    <img src="/pokedex/assets/pokemonLogo.png" alt="" />
                     Hello Trainer! Write in the search bar above the name of a Pokémon and it will appear here!
                 </div>
             </div>
