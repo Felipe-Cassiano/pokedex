@@ -33,7 +33,7 @@ function Body() {
             setPkmnInfo({
                 img: dataPkmn.sprites.front_default,
                 imgShiny: dataPkmn.sprites.front_shiny,
-                bgImg: `/public/assets/bgImgs/${dataPkmn.types[0].type.name}.gif`,
+                bgImg: `/assets/bgImgs/${dataPkmn.types[0].type.name}.gif`,
 
                 name: dataPkmn.species.name,
 
