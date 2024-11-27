@@ -33,7 +33,7 @@ function Body() {
             setPkmnInfo({
                 img: dataPkmn.sprites.front_default,
                 imgShiny: dataPkmn.sprites.front_shiny,
-                bgImg: `/assets/bgImgs/${dataPkmn.types[0].type.name}.gif`,
+                bgImg: `/public/assets/bgImgs/${dataPkmn.types[0].type.name}.gif`,
 
                 name: dataPkmn.species.name,
 
@@ -240,7 +240,7 @@ function Body() {
                 </div>
 
                 <div className="PokeInfo-container-empty">
-                    <img src="/assets/pokemonLogo.png" alt="" />
+                    <img src="../assets/pokemonLogo.png" alt="" />
                     Hello Trainer! Write in the search bar above the name of a Pokémon and it will appear here!
                 </div>
             </div>
