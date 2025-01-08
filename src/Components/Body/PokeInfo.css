@@ -1,9 +1,7 @@
 .PokeInfo-container {
     display: grid;
+    min-width: 50vw;
     gap: 10px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 125px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 75px);
     grid-template-areas: 
@@ -18,7 +16,6 @@
     color: black;
     padding: 20px;
     position: relative;
-    overflow: hidden;
 }
 
 .PokeInfo-container-info {
@@ -64,7 +61,10 @@
 }
 
 .PokeInfo-container-info-info1-pkmn-img {
-    margin-top: 25px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 15vw;
 }
 
 .PokeInfo-container-info-info2 {
@@ -76,10 +76,6 @@
     gap: 5px;
 
 }
-
-
-/* {pkmnInfo.weight} kg
-{pkmnInfo.height} m */
 
 .PokeInfo-container-info-info2-icon {
     background-color: rgba(255, 255, 255, 0.5);
@@ -188,14 +184,14 @@ ul {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
+}
+
+.hidden2 {
+    display: none !important;
 }
 
 .PokeInfo-container-empty {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,7 +213,7 @@ ul {
         margin-left: 25px;
         margin-right: 25px;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(9, 75px);
+        grid-template-rows: repeat(8, 1fr);
         grid-template-areas: 
     '       name    name    name     '
     '       info    info    info    '
@@ -227,7 +223,14 @@ ul {
     '       stats    stats    stats    '
     '       stats    stats    stats    '
     '       stats    stats    stats    '
-    '       stats    stats    stats    '
+    }
+
+    .PokeInfo-container-info-info1-pkmn-img {
+        width: 50vw;
+    }
+
+    .PokeInfo-container-info-info2-icon:hover::after {
+        animation: none;
     }
 
     .PokeInfo-container-info-info2-icon{
@@ -242,9 +245,8 @@ ul {
     }
 
     .PokeInfo-container-empty{
-        top: 0;
-        translate: -50% 0;
-        width: 300px;
+        max-width: 80vw;
+        max-height: 30vh;
     }
 
     .PokeInfo-container-empty img {

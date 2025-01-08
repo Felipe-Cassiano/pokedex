@@ -17,10 +17,11 @@ function Body() {
     }
 
     if (pkmnInfo.img) {
+        document.querySelector(".PokeInfo-container").classList.remove('hidden')
         document.querySelector(".PokeInfo-container-info").classList.remove('hidden')
         document.querySelector(".PokeInfo-container-name").classList.remove('hidden')
         document.querySelector(".PokeInfo-container-stats").classList.remove('hidden')
-        document.querySelector(".PokeInfo-container-empty").classList.add('hidden')
+        document.querySelector(".PokeInfo-container-empty").classList.add('hidden2')
     }
 
     //função assíncrona para dar fetch() na PokeAPI e receber o JSON do pokémon
@@ -124,7 +125,7 @@ function Body() {
                 </button>
             </div>
 
-            <div className="PokeInfo-container"
+            <div className="PokeInfo-container hidden"
                 style={background}
             >
                 <div className="PokeInfo-container-info hidden">
@@ -238,11 +239,11 @@ function Body() {
                         </li>
                     </ul>
                 </div>
+            </div>
 
-                <div className="PokeInfo-container-empty">
+            <div className="PokeInfo-container-empty">
                     <img src="/pokedex/assets/pokemonLogo.png" alt="" />
                     Hello Trainer! Write in the search bar above the name of a Pokémon and it will appear here!
-                </div>
             </div>
 
             <div className="Copyright">
